@@ -498,11 +498,11 @@ namespace WindowsFormsApplication1
 
         private void bFAÜbernehmen_Click(object sender, EventArgs e)
         {
-            if ((int)(bAusgabeBearbeiten.Tag) != -1)
-            {
-                tvAusgaben.Nodes.RemoveAt((int)(bAusgabeBearbeiten.Tag));
-                bAusgabeBearbeiten.Tag = -1;
-            }
+            //if ((int)(bAusgabeBearbeiten.Tag) != -1)
+            //{
+            //    tvAusgaben.Nodes.RemoveAt((int)(bAusgabeBearbeiten.Tag));
+            //    bAusgabeBearbeiten.Tag = -1;
+            //}
 
             if (tbFAEndwert.Text == "0")
             {
@@ -957,6 +957,7 @@ namespace WindowsFormsApplication1
             hp.SetHelpString(nudGAInRenteGehenImJahr, "Geben Sie hier das Jahr an, in dem die zweite Person vorraussichtlich in Rente gehen werden.");
             hp.SetHelpString(nudGaRentnerjahre, "Geben Sie hier die vorraussichtliche Zeit der zweiten Person als Rentner/in an.");
             hp.SetHelpString(nudGaJahreBisZurRente, "Geben Sie hier an, wie viele Jahre es für die zweite Person wahrscheinlich noch bis zur Rente sind.");
+            hp.SetHelpString(nudFAMonatKosten, "Die jetztigen monatlichen, gesamten Kosten");
         }
     }
 }
